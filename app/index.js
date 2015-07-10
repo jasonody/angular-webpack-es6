@@ -10,12 +10,16 @@
 		.module('app')
 		.controller('MainController', MainController);
 		
-	MainController.$inject = [];
+	MainController.$inject = ['$timeout'];
 	
-	function MainController () {
+	function MainController ($timeout) {
 		
 		var vm = this;
 		
 		vm.message = "Booyah!";
+		
+		$timeout(() => {
+			vm.message = "ES6 success!";
+		}, 1000);
 	}
 }());
