@@ -1,0 +1,25 @@
+{
+  "name": "angular-webpack-es6",
+  "version": "0.1.0",
+  "description": "Angular development using webpack and ES6",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack-dev-server --content-base app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonody/angular-webpack-es6.git"
+  },
+  "author": "Jason Ody",
+  "license": "MIT",
+  "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "angular": "^1.4.2"
+  }
+}
