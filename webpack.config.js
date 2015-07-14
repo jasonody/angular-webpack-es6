@@ -1,9 +1,10 @@
 /// <reference path="typings/node/node.d.ts"/>
 module.exports = {
-	context: __dirname + '/app',
-	entry: './index.js',
+	entry: {
+		app: ["webpack/hot/dev-server", "./app/app.js"],
+	},
 	output: {	
-		path: __dirname + '/app',
+		path: './app',
 		filename: 'bundle.js'
 	},
 	module: {

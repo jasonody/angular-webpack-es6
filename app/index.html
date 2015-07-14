@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<title>Angular, Webpack and ES6</title>
+	<base href="/">
 </head>
 <body ng-app="app">
-	<div ng-controller="MainController as vm">
-		{{vm.message}}
+	<div class="container">
+		<ui-view></ui-view>
 	</div>
 	
 	<script src="bundle.js"></script>
