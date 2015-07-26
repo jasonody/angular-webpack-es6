@@ -15,15 +15,20 @@
   "author": "Jason Ody",
   "license": "MIT",
   "devDependencies": {
-		"babel-core": "^5.6.17",
-		"babel-loader": "^5.3.1",
-		"node-libs-browser": "^0.5.2",
-		"raw-loader": "^0.5.1",
-		"webpack": "^1.10.1",
-		"webpack-dev-server": "^1.10.1"
-	},
+    "babel-core": "^5.6.17",
+    "babel-loader": "^5.3.1",
+    "css-loader": "^0.15.5",
+    "file-loader": "^0.8.4",
+    "node-libs-browser": "^0.5.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  },
   "dependencies": {
     "angular": "^1.4.2",
-    "angular-ui-router": "^0.2.15"
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.5"
   }
 }
