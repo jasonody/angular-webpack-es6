@@ -1,17 +1,22 @@
 export default class HomeController {
 	
-	constructor (randomNames) {
+	constructor(randomNames) {
 		
 		this.name = "World";
 		this.randomNames = randomNames;
+		this.randomNames.addNames('TJ', 'Pin Head', 'Sandro');
 	}
 	
-	changeName () {
+	changeName() {
 		
-		this.name = 'fun with ES6 & Angular! Hi Andrew!!!!';
+		var javascript = 'es6';
+		var framework = 'Angular';
+		var tech = { javascript, framework };
+		
+		this.name = `fun with ${tech.javascript.toUpperCase()} & ${tech.framework}!`;
 	}
 	
-	randomName () {
+	randomName() {
 		
 		this.name = this.randomNames.getName();	
 	}

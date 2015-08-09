@@ -4,7 +4,7 @@ class RandomNames {
 	
 	constructor() {
 		
-		this.names = ['Jason', 'Jon', 'Val', 'Fiona'];
+		this.names = ['Marciano', 'Mailman', 'Paulie', 'Tricky Dave'];
 	}
 	
 	getName() {
@@ -12,6 +12,11 @@ class RandomNames {
 		let rand = Math.floor(Math.random() * totalNames);
 		
 		return this.names[rand];
+	}
+	
+	addNames(...names) {
+		
+		this.names = this.names.concat(names);
 	}
 }
 
